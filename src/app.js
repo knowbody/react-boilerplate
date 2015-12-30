@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { render } from 'react-dom';
+import { VictoryPie } from 'victory';
 
-const App = () => <h1>Hello from React Boilerplate!</h1>;
+
+class App extends Component {
+  render() {
+    return (
+      <VictoryPie />
+    );
+  }
+}
 
 render(<App />, document.getElementById('root'));
